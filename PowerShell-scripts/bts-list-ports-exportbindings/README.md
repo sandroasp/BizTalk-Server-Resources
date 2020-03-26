@@ -5,5 +5,7 @@ With this PowerShell sample we will be able to generate a unique binding file fo
  
 THIS POWERSHELL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
-# About Me
+# About Us
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
+
+**Pedro Almeida** | [DevScope](http://www.devscope.net/) | Integration Senior Developer
