@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="FullyBound" BoundEndpoints="5" TotalEndpoints="5">
+  <Timestamp>2019-03-19T17:22:02.4870716+00:00</Timestamp>
+  <ModuleRefCollection />
+  <SendPortCollection />
+  <DistributionListCollection />
+  <ReceivePortCollection />
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>
