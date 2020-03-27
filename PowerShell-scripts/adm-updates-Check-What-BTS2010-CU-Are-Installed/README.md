@@ -1,4 +1,4 @@
-# Check which BizTalk Server 2016 Feature Packs installed with PowerShell
+# Check what BizTalk Server 2010 Cumulative Updates are installed with PowerShell
 We cannot rely on documentation, if they exist, to be accurate, special regarding to the status of the machines present in the environment that tell us what is installed on the machine, what are the updates (or CU) or service pack installed and so on… and regarding to BizTalk Server I do not remember another simple task like this, get or check the list of all BizTalk Cumulative Updates installed in your machine/environment, being so painful to perform!
 
 Of course, there are some ways to check that, for example:
