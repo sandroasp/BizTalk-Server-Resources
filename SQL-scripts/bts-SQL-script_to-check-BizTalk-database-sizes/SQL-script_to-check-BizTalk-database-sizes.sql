@@ -1,0 +1,12 @@
+SELECT  DB_NAME(DATABASE_ID) AS [Database Name], 
+		name AS [Filename],
+		CASE type_desc 
+			WHEN 'ROWS'	THEN 'DATA' 
+						ELSE 'LOG'
+		END AS [File Type],
+		CAST(( CAST(SIZE * 8 AS FLOAT) ) / 1024 AS VARCHAR) + ' MB' AS [Size (MB)]
+FROM    SYS.MASTER_FILES
+WHERE DB_NAME(DATABASE_ID) like '%BizTalk%' 
+	OR DB_NAME(DATABASE_ID) like '%SSO%'
+	OR DB_NAME(DATABASE_ID) like '%BAM%'
+ORDER BY DB_NAME(DATABASE_ID) 
