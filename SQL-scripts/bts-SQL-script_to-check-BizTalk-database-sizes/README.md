@@ -14,7 +14,7 @@ And if some of these databases become too large it may adversely impact the over
 
 **Note**: These values ​​were used for a standalone environment. In a high throughput BizTalk Server environment you should consider devide the BizTalkMsgBoxDb in 8 data files, each having a file size of 2 GB with 100 MB growth and a log file of 20 GB with 100 MB growth. Because the BizTalk MessageBox databases are the most active, we recommend you place the data files and transaction log files on dedicated drives to reduce the likelihood of problems with disk I/O contention.
 
-![BizTalk Server databases sizes](media/BizTalk-Server databases-sizes.png)
+![BizTalk Server databases sizes](media/BizTalk-Server-databases-sizes.png)
 
 This SQL script will check and provide you will all the important informations about the sizes of all BizTalk Server databases.
  
