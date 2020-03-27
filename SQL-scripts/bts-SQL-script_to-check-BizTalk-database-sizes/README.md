@@ -12,7 +12,7 @@ And if some of these databases become too large it may adversely impact the over
 * **BAMArchive (BAM Archive)**: Data file having a file size of 70 MB with 10 MB growth and a log file of 200 MB with 10 MB growth.
 * **BizTalkRuleEngineDb (Rule Engine database)**: Data file with 1 MB growth and a log file with 1 MB growth.
 
-**Note**: These values ​​were used for a standalone environment. In a high throughput BizTalk Server environment you should consider devide the BizTalkMsgBoxDb in 8 data files, each having a file size of 2 GB with 100 MB growth and a log file of 20 GB with 100 MB growth. Because the BizTalk MessageBox databases are the most active, we recommend you place the data files and transaction log files on dedicated drives to reduce the likelihood of problems with disk I/O contention, as is explained here: http://msdn.microsoft.com/en-us/library/ee377048.aspx
+**Note**: These values ​​were used for a standalone environment. In a high throughput BizTalk Server environment you should consider devide the BizTalkMsgBoxDb in 8 data files, each having a file size of 2 GB with 100 MB growth and a log file of 20 GB with 100 MB growth. Because the BizTalk MessageBox databases are the most active, we recommend you place the data files and transaction log files on dedicated drives to reduce the likelihood of problems with disk I/O contention.
 
 ![BizTalk Server databases sizes](media/BizTalk-Server databases-sizes.png)
 
