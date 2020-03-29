@@ -1,4 +1,4 @@
-# Terminate Suspended (not resumable) Routing Failure Report Instances PowerShell
+# Installing BizTalk Server 2013 R2 in a Basic Multi-Computer Environment (Guide)
 There are many things to consider when planning this type of installation, often the network infrastructure already exists and BizTalk Server must coexist with other network applications. 
 
 This 145 pages detailed installation document that explains how to install, configure and optimize Microsoft BizTalk Server 2013 R2 on a basic multi-computer running Windows Server 2012 R2. This information will help you to plan the installation and configuration of BizTalk Server 2013 R2, applications and components on which it depends. 
