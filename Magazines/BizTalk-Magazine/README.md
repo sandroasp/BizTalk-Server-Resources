@@ -9,7 +9,7 @@ This first edition contains:
 * Exposing data through BizTalk Service Hybrid Connections
 * BizTalk Server SQL Agent Jobs
 
-![BizTalk Server Magazine](media/Capture.png)
+![BizTalk Server Magazine](media/magazine.png)
 
 # About Us
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
