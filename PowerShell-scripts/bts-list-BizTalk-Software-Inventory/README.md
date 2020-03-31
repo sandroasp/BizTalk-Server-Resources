@@ -1,47 +1,19 @@
-# Obtain a list of BizTalk Software Inventory installed with PowerShell
-It’s always good to know what software is installed in our environment. Sometimes we need to know what version of BizTalk is installed or what version of the Adapter Pack, x86 or x64?
+# Determining the process ID of BizTalk Host Instances with PowerShell
+We can debug for example, external assembly’s that are called from within a BizTalk process or debugging pipeline components in run-time mode. In Visual Studio set breakpoints in your code. To debug you must attach to the BizTalk process that is running the .Net code.
 
-And preferably be able to get this list in an easy and automated way.
+However if we have more than one host instance configured, when we open the debug menu and choose attach to process, it appears all host instance with the same process name (“BTSNTSvc.exe”), like this:
 
-This is my first version of this script and I will present how we can accomplish this using PowerShell.
+![BizTalk Server 2013 logo](media/attachtoprocess.jpg)
 
-Result sample:
+So if we don’t want to attach all processes, we need to determine which process to attach to.
 
-Caption:  Microsoft BizTalk Server Best Practices Analyzer
-Description:  Microsoft BizTalk Server Best Practices Analyzer
-Installation Date:  20110819
-Installation Location:  C:\Program Files (x86)\BizTalkBPA\
-Name:  Microsoft BizTalk Server Best Practices Analyzer
-Version:  1.2.133.0
-Vendor:  Microsoft Corporation
-
-Caption:  Microsoft BizTalk Server 2010
-Description:  Microsoft BizTalk Server 2010
-Installation Date:  20120229
-Installation Location:  C:\Program Files (x86)\Microsoft BizTalk Server 2010\
-Name:  Microsoft BizTalk Server 2010
-Version:  3.9.469.0
-Product Edition:  Developer
-Vendor:  Microsoft Corporation
-
-Caption:  Microsoft BizTalk Adapter Pack
-Description:  Microsoft BizTalk Adapter Pack
-Installation Date:  20120430
-Installation Location:  C:\Program Files (x86)\Microsoft BizTalk Adapter Pack\
-Name:  Microsoft BizTalk Adapter Pack
-Version:  3.5.6527.0
-Vendor:  Microsoft Corporation
-
-Caption:  Microsoft BizTalk Adapter Pack(x64)
-Description:  Microsoft BizTalk Adapter Pack(x64)
-Installation Date:  20120430
-Installation Location:  C:\Program Files\Microsoft BizTalk Adapter Pack(x64)\
-Name:  Microsoft BizTalk Adapter Pack(x64)
-Version:  3.5.6527.0
-Vendor:  Microsoft Corporation
-
-I hope you find it useful.
+You can do this by many ways:
+* You can use the TASKLIST command to query the processes. Execute the following command in a command prompt on the remote box
+* Using C# code
+* Or with powershell
  
+The script can be downloaded and executed in powershell. Open Powershell and drag the HostInstancesProcessID.ps1 file into PowerShell Window. Then enter return.
+
 THIS POWERSHELL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 # About Me
