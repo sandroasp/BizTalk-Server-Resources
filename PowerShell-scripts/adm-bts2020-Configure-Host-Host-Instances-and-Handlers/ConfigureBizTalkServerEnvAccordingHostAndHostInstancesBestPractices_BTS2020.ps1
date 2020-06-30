@@ -10,7 +10,7 @@
 #############################################################
 # Global Variables
 #############################################################
-[string] $bizTalkDbServer = "BTSSQL\INSTANCE"
+[string] $bizTalkDbServer = "."
 [string] $bizTalkDbName = "BizTalkMgmtDb"
 
 #############################################################
@@ -116,7 +116,8 @@ function CreateBizTalkHostInstance(
 	[string]$hostName,
 	[string]$serverName,
 	[string]$username,
-	[string]$password)
+	[string]$password,
+    [boolean]$IsGmsaAccount)
 {
     try
     {
@@ -130,7 +131,7 @@ function CreateBizTalkHostInstance(
 
         $name = "Microsoft BizTalk Server " + $hostName + " " + $serverName
         $objHostInstance["Name"] = $name
-        $objHostInstance.Install($username, $password, $true)
+        $objHostInstance.Install($username, $password, $true, $IsGmsaAccount)
 
 		Write-Host "HostInstance $hostName was mapped and installed successfully. Mapping created between Host: $hostName and Server: $Server);" -Fore DarkGreen
     }
@@ -138,7 +139,17 @@ function CreateBizTalkHostInstance(
     {
 		if ($_.Exception.Message.Contains("Another object with the same key properties already exists.") -eq $true)
         {
-			Write-Host "$hostName host instance can't be created because another object with the same key properties already exists." -Fore DarkRed
+            ## Getting the list of BizTalk Host Instances objects
+            $hosts = Get-WmiObject MSBTS_HostInstance -namespace 'root/MicrosoftBizTalkServer'
+            ## Listing existing BizTalk Host Instances names
+            $hosts | ft HostName
+            ## Getting/Filter the desired instance
+            $MyHost = $hosts | ?{$_.HostName -eq $hostName}
+            ## Change BizTalk Host Instance user credentials
+            $MyHost.Install($username, $password, $true, $IsGmsaAccount)
+            Write-Host "$hostName host instance Updated." -Fore DarkGreen
+
+			##Write-Host "$hostName host instance can't be created because another object with the same key properties already exists." -Fore DarkRed
         }
 		else{
         	write-Error "$hostName host instance on server $Server could not be created: $_.Exception.ToString()"
@@ -405,23 +416,31 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkHost $receiveHostName 1 $ntHostGroupName $false $false $false
 	CreateBizTalkHost $receive32HostName 1 $ntHostGroupName $false $false $true
  
-	# Create a host instances for receiving associated with the previous hosts created
-	CreateBizTalkHostInstance $receiveHostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword
-	CreateBizTalkHostInstance $receive32HostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword
- 
+    if($useGMSAccounts -eq $true)
+    {
+        # Create a host instances for receiving associated with the previous hosts created
+	    CreateBizTalkHostInstance $receiveHostName $bizTalkServerName $GMSAccountsname '' $true
+	    CreateBizTalkHostInstance $receive32HostName $bizTalkServerName $GMSAccountsname '' $true
+    }
+    else
+    {
+	    # Create a host instances for receiving associated with the previous hosts created
+	    CreateBizTalkHostInstance $receiveHostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword $false
+	    CreateBizTalkHostInstance $receive32HostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword $false
+    }
+
 	# Set adapters that should be handled by receiving host instance
 	CreateBizTalkAdapterHandler 'FILE' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MQSeries' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MSMQ' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-Custom' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'SFTP' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-Custom' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetMsmq' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetNamedPipe' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetTcp' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'SB-Messaging' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'SFTP' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-NetTcpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-NetTcpRelay' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
 	##### Optional LOB Adapters
     CreateBizTalkAdapterHandler 'WCF-SQL' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
     CreateBizTalkAdapterHandler 'WCF-SAP' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
@@ -433,6 +452,13 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkAdapterHandler 'SQL' 'Receive' $receive32HostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-SAP' 'Receive' $receive32HostName $defaultHostName $false $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-Custom' 'Receive' $receive32HostName $false $false $false
+    ##### Cloud adapters
+    CreateBizTalkAdapterHandler 'AzureBlobStorage' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'EventHub' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'LogicApp' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Office365 Outlook Calendar' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Office365 Outlook Email' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'SB-Messaging' 'Receive' $receiveHostName $defaultHostName $false $removeOriginalAdapterHandler
  
  	##############################
 	# Creating hosts for sending
@@ -441,29 +467,37 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkHost $send32HostName 1 $ntHostGroupName $false $false $true
  
 	# Create a host instances for sending associated with the previous hosts created
-	CreateBizTalkHostInstance $sendHostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword
-	CreateBizTalkHostInstance $send32HostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword
+	if($useGMSAccounts -eq $true)
+    {
+        # Create a host instances for receiving associated with the previous hosts created
+	    CreateBizTalkHostInstance $sendHostName $bizTalkServerName $bizTalkServerName $GMSAccountsname '' $true
+	    CreateBizTalkHostInstance $send32HostName $bizTalkServerName $bizTalkServerName $GMSAccountsname '' $true
+    }
+    else
+    {
+	    # Create a host instances for receiving associated with the previous hosts created
+	    CreateBizTalkHostInstance $sendHostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword $false
+	    CreateBizTalkHostInstance $send32HostName $bizTalkServerName $hostCredentials.UserName $hostCredentialsPassword $false
+    }
  
 	# Set adapters that should be handled by sending host instance
 	CreateBizTalkAdapterHandler 'FILE' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'HTTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MQSeries' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'MSMQ' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'SFTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'SMTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'SOAP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'SMTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-BasicHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-Custom' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-BasicHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-Custom' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetMsmq' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetNamedPipe' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetTcp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-WSHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'SB-Messaging' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'SFTP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-BasicHttpRelay' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-NetTcpRelay' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-WebHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
-	CreateBizTalkAdapterHandler 'WCF-WSHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-WebHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'WCF-WSHttp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+	CreateBizTalkAdapterHandler 'Windows SharePoint Services' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
     ##### Optional LOB Adapters
     CreateBizTalkAdapterHandler 'WCF-SQL' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
     CreateBizTalkAdapterHandler 'WCF-SAP' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
@@ -474,7 +508,16 @@ function ConfiguringBizTalkServerHostAndHostInstances
 	CreateBizTalkAdapterHandler 'SQL' 'Send' $send32HostName $defaultHostName $true $removeOriginalAdapterHandler
 	CreateBizTalkAdapterHandler 'WCF-Custom' 'Send' $send32HostName $false $true $false
 	CreateBizTalkAdapterHandler 'WCF-SAP' 'Send' $send32HostName $defaultHostName $true $removeOriginalAdapterHandler
-	
+    ##### Cloud adapters
+    CreateBizTalkAdapterHandler 'AzureBlobStorage' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'EventHub' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'LogicApp' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Office365 Outlook Calendar' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Office365 Outlook Contact' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'Office365 Outlook Email' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler
+    CreateBizTalkAdapterHandler 'SB-Messaging' 'Send' $sendHostName $defaultHostName $true $removeOriginalAdapterHandler	
+
+
 	# Create a host for tracking
 	CreateBizTalkHost $trackingHostName 1 $ntHostGroupName $false $true $false
 	
@@ -521,7 +564,7 @@ else {
 # resources. Each instance of this host must run under a user account that is a member of this group. 
 # Note that you can change the Windows group only if no instances of this host exist. 
 # Defining the name of the group the BizTalk hosts should run under
-[string]$ntHostGroupName = Read-Host -Prompt "Please enter windows group to control access to Hosts and ssociated Host Instances" 
+[string]$ntHostGroupName = Read-Host -Prompt "Please enter windows group to control access to Hosts and associated Host Instances" 
 
 # STEP 2
 # This account must have SQL Server permissions. The recommended way to grant these permissions is to add this account 
@@ -529,19 +572,31 @@ else {
 # BizTalk Server will add this account to the "Log on as a service" security policy.
 # For domain accounts, use "domain\user" format
 # Defining the credentials in witch the host instance should run under.
-try
-{
-	$domain = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
-	$domainName = $domain.name
-}
-catch
-{
-	$domainName = $(Get-WmiObject Win32_Computersystem).name
-}
-$hostCredentials = $Host.ui.PromptForCredential("Logon Credentials","This account must have SQL Server permissions. The recommended way to grant these permissions is to add this account to the BizTalk Server Host Windows group.
 
-BizTalk Server will add this account to the 'Log on as a service' security policy", $domainName + "\", "");
-[String]$hostCredentialsPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($hostCredentials.Password)); 
+$questionResult = $windowsShell.popup("Do you want to use Group Managed Service Accounts?", 
+						  0,"Using Group Managed Service Accounts",4)
+ 	
+If ($questionResult -eq 6) {
+	$useGMSAccounts = $true
+    [string]$GMSAccountsname = Read-Host -Prompt "Please enter Group Managed Service Account name (DOMAIN\Username): " 
+}
+else {
+	$useGMSAccounts = $false
+    try
+    {
+	    $domain = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
+	    $domainName = $domain.name
+    }
+    catch
+    {
+	    $domainName = $(Get-WmiObject Win32_Computersystem).name
+    }
+    $hostCredentials = $Host.ui.PromptForCredential("Logon Credentials","This account must have SQL Server permissions. The recommended way to grant these permissions is to add this account to the BizTalk Server Host Windows group.
+
+    BizTalk Server will add this account to the 'Log on as a service' security policy", $domainName + "\", "");
+    [String]$hostCredentialsPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($hostCredentials.Password)); 
+
+}
 
 # STEP 3
 # Defining the option if you want to automatically try to remove the BizTalkServerApplication Host Instance from 
