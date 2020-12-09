@@ -1,11 +1,11 @@
-# BizTalk 2020: Scripts to Fix Logic App Adapter installation
+# BizTalk Server 2020: Scripts to Fix Logic App Adapter installation
 This script Applies to:
 * Microsoft BizTalk Server 20202
 * Microsoft BizTalk Server 2016
 
 Scripts available:
-* **RemoveLogicAppAdapter.vbs**: script to un-register the Logic App adapter from the BziTalk Server Configuration Console
-* **AddLogicAppAdapter.vbs**: script to un-register the Logic App adapter from the BziTalk Server Configuration Console
+* **RemoveLogicAppAdapter.vbs**: script to un-register the Logic App adapter from the BizTalk Server Configuration Console
+* **AddLogicAppAdapter.vbs**: script to properly register the Logic App adapter from the BizTalk Server Configuration Console
  
 This scripts were taken from the [Microsoft BizTalk Server Adapter](https://www.microsoft.com/en-us/download/details.aspx?id=54287) for Logic Apps installer used for BizTalk Server 2016
  
