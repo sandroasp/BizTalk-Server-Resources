@@ -1,13 +1,15 @@
 use msdb 
 GO
 
-WITH MostRecentSched AS  
+WITH MostRecentSchedul AS  
  (  
  -- For each job get the most recent scheduled run date (this will be the one where Rnk=1)  
  SELECT job_id, 
 		last_executed_step_date,
 		RANK() OVER (PARTITION BY job_id ORDER BY last_executed_step_date DESC) AS Rnk  
  FROM sysjobactivity  
+ WHERE session_id = (
+	SELECT MAX(session_id) FROM msdb.dbo.sysjobactivity)
  ) 
  select name [Job Name], 
 	last_executed_step_date [Last Scheduled Run Date], 
@@ -15,7 +17,7 @@ WITH MostRecentSched AS
 		CASE WHEN enabled=1 THEN 'Enabled'  
           ELSE 'Disabled'  
         END [Job Status]
-from MostRecentSched MRS
+from MostRecentSchedul MRS
 JOIN   sysjobs SJ  
 ON     MRS.job_id=SJ.job_id
 where Rnk=1
