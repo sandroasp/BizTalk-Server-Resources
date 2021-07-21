@@ -12,9 +12,9 @@ And also this are unnecessary information that are being logged in the Applicati
 
 With this script you can easily move an Event Source To a different or to a Custom Windows Event Log.
 
-This will help BizTalk Administrators to take back control of their environments
+This will help BizTalk Administrators to take full control of their environments
  
-THIS POWERSHELL & SQL SCRIPT ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THIS POWERSHELL SCRIPT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)

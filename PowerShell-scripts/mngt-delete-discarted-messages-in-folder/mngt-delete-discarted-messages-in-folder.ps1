@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Path C:\Temp -Include *.* -File -Recurse | foreach { $_.Delete()}
