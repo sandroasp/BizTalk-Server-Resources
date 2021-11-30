@@ -1,0 +1,5 @@
+<Root xmlns="http://AdapterHarness.mySchema">
+  <FirstName xmlns="">John</FirstName>
+  <LastName xmlns="">Frum</LastName>
+  <EMail xmlns="">JohnFrum@example.com</EMail>
+</Root>

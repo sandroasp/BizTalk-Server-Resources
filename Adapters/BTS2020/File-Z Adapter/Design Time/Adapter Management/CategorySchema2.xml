@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CategoryTree>
+	<DisplayName>cat Name</DisplayName>
+	<DisplayDescription>cat Desc</DisplayDescription>
+	<CategoryTreeNode>
+		<DisplayName> Node Name </DisplayName>	
+		<Description> Node Description </Description>
+		<ServiceTreeNode>
+			<DisplayName> wsdlName </DisplayName>
+			<Description> wsdlDesc</Description>
+			<WSDLReference> wsdlRef </WSDLReference>
+		</ServiceTreeNode>
+	</CategoryTreeNode>
+</CategoryTree>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetTaxID">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTaxIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTaxIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPayStub">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPayStubResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPayStubResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTaxInfo">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTaxInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTaxInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </types>
+  <message name="GetTaxIDSoapIn">
+    <part name="parameters" element="s0:GetTaxID" />
+  </message>
+  <message name="GetTaxIDSoapOut">
+    <part name="parameters" element="s0:GetTaxIDResponse" />
+  </message>
+  <message name="GetPayStubSoapIn">
+    <part name="parameters" element="s0:GetPayStub" />
+  </message>
+  <message name="GetPayStubSoapOut">
+    <part name="parameters" element="s0:GetPayStubResponse" />
+  </message>
+  <message name="GetTaxInfoSoapIn">
+    <part name="parameters" element="s0:GetTaxInfo" />
+  </message>
+  <message name="GetTaxInfoSoapOut">
+    <part name="parameters" element="s0:GetTaxInfoResponse" />
+  </message>
+  <message name="GetTaxIDHttpGetIn" />
+  <message name="GetTaxIDHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetPayStubHttpGetIn" />
+  <message name="GetPayStubHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetTaxInfoHttpGetIn" />
+  <message name="GetTaxInfoHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetTaxIDHttpPostIn" />
+  <message name="GetTaxIDHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetPayStubHttpPostIn" />
+  <message name="GetPayStubHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetTaxInfoHttpPostIn" />
+  <message name="GetTaxInfoHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <portType name="SAPServiceSoap">
+    <operation name="GetTaxID">
+      <input message="s0:GetTaxIDSoapIn" />
+      <output message="s0:GetTaxIDSoapOut" />
+    </operation>
+    <operation name="GetPayStub">
+      <input message="s0:GetPayStubSoapIn" />
+      <output message="s0:GetPayStubSoapOut" />
+    </operation>
+    <operation name="GetTaxInfo">
+      <input message="s0:GetTaxInfoSoapIn" />
+      <output message="s0:GetTaxInfoSoapOut" />
+    </operation>
+  </portType>
+  <portType name="SAPServiceHttpGet">
+    <operation name="GetTaxID">
+      <input message="s0:GetTaxIDHttpGetIn" />
+      <output message="s0:GetTaxIDHttpGetOut" />
+    </operation>
+    <operation name="GetPayStub">
+      <input message="s0:GetPayStubHttpGetIn" />
+      <output message="s0:GetPayStubHttpGetOut" />
+    </operation>
+    <operation name="GetTaxInfo">
+      <input message="s0:GetTaxInfoHttpGetIn" />
+      <output message="s0:GetTaxInfoHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="SAPServiceHttpPost">
+    <operation name="GetTaxID">
+      <input message="s0:GetTaxIDHttpPostIn" />
+      <output message="s0:GetTaxIDHttpPostOut" />
+    </operation>
+    <operation name="GetPayStub">
+      <input message="s0:GetPayStubHttpPostIn" />
+      <output message="s0:GetPayStubHttpPostOut" />
+    </operation>
+    <operation name="GetTaxInfo">
+      <input message="s0:GetTaxInfoHttpPostIn" />
+      <output message="s0:GetTaxInfoHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="SAPServiceSoap" type="s0:SAPServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetTaxID">
+      <soap:operation soapAction="http://tempuri.org/GetTaxID" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPayStub">
+      <soap:operation soapAction="http://tempuri.org/GetPayStub" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetTaxInfo">
+      <soap:operation soapAction="http://tempuri.org/GetTaxInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SAPServiceHttpGet" type="s0:SAPServiceHttpGet">
+    <http:binding verb="GET" />
+    <operation name="GetTaxID">
+      <http:operation location="/GetTaxID" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetPayStub">
+      <http:operation location="/GetPayStub" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetTaxInfo">
+      <http:operation location="/GetTaxInfo" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SAPServiceHttpPost" type="s0:SAPServiceHttpPost">
+    <http:binding verb="POST" />
+    <operation name="GetTaxID">
+      <http:operation location="/GetTaxID" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetPayStub">
+      <http:operation location="/GetPayStub" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetTaxInfo">
+      <http:operation location="/GetTaxInfo" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SAPService">
+    <port name="SAPServiceSoap" binding="s0:SAPServiceSoap">
+      <soap:address location="http://ramndt1/sapws/sapservice.asmx" />
+    </port>
+    <port name="SAPServiceHttpGet" binding="s0:SAPServiceHttpGet">
+      <http:address location="http://ramndt1/sapws/sapservice.asmx" />
+    </port>
+    <port name="SAPServiceHttpPost" binding="s0:SAPServiceHttpPost">
+      <http:address location="http://ramndt1/sapws/sapservice.asmx" />
+    </port>
+  </service>
+</definitions>

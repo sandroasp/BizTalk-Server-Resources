@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{DC3B4C9B-35FA-4ADE-9386-BB72D89CF25C}]
+@="File-Z Adapter"
+"AppID"="{12A6EBAA-CF68-4B58-B36E-A5A19B22C04E}"
+
+[HKEY_CLASSES_ROOT\CLSID\{DC3B4C9B-35FA-4ADE-9386-BB72D89CF25C}\BizTalk]
+@="BizTalk"
+"TransportType"="File-Z"
+"Constraints"=dword:00003C0b
+
+"InboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A281}"
+"OutboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A283}"
+"ReceiveLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A280}"
+"TransmitLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A282}"
+
+"InboundEngineCLSID"="{3c3d0ee2-bf30-466d-9d73-350fcb53e9c8}"
+"InboundTypeName"="Microsoft.BizTalk.FileZ.Adapter.FileZReceiver"
+"InboundAssemblyPath"="C:\\DEV\\Pet Projects\\File Adapter\\Runtime\\bin\\Debug\\Microsoft.BizTalk.FileZ.Adapter.Runtime.dll"
+"OutboundEngineCLSID"="{9a623f34-4e16-484d-8217-1ec0973b4294}"
+"OutboundTypeName"="Microsoft.BizTalk.FileZ.Adapter.FileZTransmitter"
+"OutboundAssemblyPath"="C:\\DEV\\Pet Projects\\File Adapter\\Runtime\\bin\\Debug\\Microsoft.BizTalk.FileZ.Adapter.Runtime.dll"
+
+"AdapterMgmtTypeName"="Microsoft.BizTalk.SDKSamples.Adapters.Designtime.StaticAdapterManagement"
+"AdapterMgmtAssemblyPath"="C:\\DEV\\Pet Projects\\File Adapter\\Design Time\\Adapter Management\\bin\\Debug\\Microsoft.BizTalk.SDKSamples.Adapters.DotNetFile.Designtime.dll"
+
+"PropertyNameSpace"="http://schemas.microsoft.com/BizTalk/2003/SDK_Samples/Messaging/Transports/filez-properties"
+"AliasesXML"="<AdapterAliasList><AdapterAlias>FileZ://</AdapterAlias></AdapterAliasList>"
+"ReceiveHandlerPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+"SendHandlerPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+"ReceiveLocationPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+"SendLocationPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{DC3B4C9B-35FA-4ADE-9386-BB72D89CF25C}\Implemented Categories]
+
+[HKEY_CLASSES_ROOT\CLSID\{DC3B4C9B-35FA-4ADE-9386-BB72D89CF25C}\Implemented Categories\{7F46FC3E-3C2C-405B-A47F-8D17942BA8F9}]

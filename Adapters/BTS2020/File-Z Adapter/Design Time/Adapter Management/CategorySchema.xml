@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CategoryTree>
+	<DisplayName>Services Organization</DisplayName>
+	<DisplayDescription>An organization of application services</DisplayDescription>
+	<CategoryTreeNode>
+		<DisplayName>Health Care</DisplayName>	
+		<Description>Services under Health Care</Description>
+		<CategoryTreeNode>
+			<DisplayName>Administrative</DisplayName>	
+			<Description>Administrative Health Care Services</Description>
+
+			<ServiceTreeNode>
+				<DisplayName>Eligibility</DisplayName>
+				<Description>Eligibility Verification Transactions</Description>
+				<WSDLReference>ANSI X 12 270</WSDLReference>
+			</ServiceTreeNode>
+		</CategoryTreeNode>
+	</CategoryTreeNode>
+	<CategoryTreeNode>
+		<DisplayName>Manufacturing</DisplayName>	
+		<Description>Manufacturing Services</Description>
+		<CategoryTreeNode>
+			<DisplayName>Inventory</DisplayName>	
+			<Description>Inventory Services</Description>
+
+			<ServiceTreeNode>
+				<DisplayName>Requisition</DisplayName>
+				<Description>Requisition</Description>
+				<WSDLReference>RequisitionService</WSDLReference>
+			</ServiceTreeNode>
+		</CategoryTreeNode>
+	</CategoryTreeNode>
+
+</CategoryTree>
