@@ -1,0 +1,5 @@
+c:\users\ml31890\documents\visual studio 2010\Projects\LoopbackAdapter\LoopbackAdapter\obj\Debug\ResolveAssemblyReference.cache
+c:\users\ml31890\documents\visual studio 2010\Projects\LoopbackAdapter\LoopbackAdapter\bin\Debug\LoopbackAdapter.dll
+c:\users\ml31890\documents\visual studio 2010\Projects\LoopbackAdapter\LoopbackAdapter\bin\Debug\LoopbackAdapter.pdb
+c:\users\ml31890\documents\visual studio 2010\Projects\LoopbackAdapter\LoopbackAdapter\obj\Debug\LoopbackAdapter.dll
+c:\users\ml31890\documents\visual studio 2010\Projects\LoopbackAdapter\LoopbackAdapter\obj\Debug\LoopbackAdapter.pdb

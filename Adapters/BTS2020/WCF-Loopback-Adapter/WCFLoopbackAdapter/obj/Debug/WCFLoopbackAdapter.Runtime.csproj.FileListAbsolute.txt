@@ -1,0 +1,12 @@
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\obj\Debug\WCFLoopbackAdapter.Runtime.csprojAssemblyReference.cache
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\obj\Debug\WCFLoopbackAdapter.Runtime.csproj.CoreCompileInputs.cache
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\bin\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.dll
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\bin\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.pdb
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\obj\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.dll
+C:\DEV\Pet Projects\WCFLoopbackAdapter\LoopbackAdapter\obj\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.pdb
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\bin\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.dll
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\bin\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.pdb
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\obj\Debug\WCFLoopbackAdapter.Runtime.csprojAssemblyReference.cache
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\obj\Debug\WCFLoopbackAdapter.Runtime.csproj.CoreCompileInputs.cache
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\obj\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.dll
+C:\DEV\Pet Projects\WCFLoopbackAdapter\WCFLoopbackAdapter\obj\Debug\Microsoft.BizTalk.WCFLoopback.Adapter.Runtime.pdb
