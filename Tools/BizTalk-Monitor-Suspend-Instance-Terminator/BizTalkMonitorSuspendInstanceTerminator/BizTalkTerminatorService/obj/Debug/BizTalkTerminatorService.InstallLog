@@ -1,0 +1,54 @@
+﻿Installing assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Installing service BizTalkTerminator...
+Service BizTalkTerminator has been successfully installed.
+Creating EventLog source BizTalkTerminator in log Application...
+Installing service BTSTerminator...
+Service BTSTerminator has been successfully installed.
+Creating EventLog source BTSTerminator in log Application...
+Committing assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Installing assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Installing service BizTalkTerminator...
+Creating EventLog source BizTalkTerminator in log Application...
+Rolling back assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Restoring event log to previous state for source BizTalkTerminator.
+Installing assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Installing service BizTalkTerminator...
+Creating EventLog source BizTalkTerminator in log Application...
+Rolling back assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Restoring event log to previous state for source BizTalkTerminator.
+Uninstalling assembly 'C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.InstallLog
+   assemblypath = C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+Removing EventLog source BTSTerminator.
+Service BTSTerminator is being removed from the system...
+Service BTSTerminator was successfully removed from the system.
+Removing EventLog source BizTalkTerminator.
+Warning: The source BizTalkTerminator is not registered on the local machine.
+Service BizTalkTerminator is being removed from the system...
+Service BizTalkTerminator was successfully removed from the system.

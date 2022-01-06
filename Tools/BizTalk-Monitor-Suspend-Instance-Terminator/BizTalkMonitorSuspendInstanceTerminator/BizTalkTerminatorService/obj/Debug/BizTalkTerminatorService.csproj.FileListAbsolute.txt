@@ -1,0 +1,26 @@
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csprojAssemblyReference.cache
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.BizTalkTerminatorService.resources
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.ProjectInstaller.resources
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.GenerateResource.cache
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.CoreCompileInputs.cache
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\Assemblies\BizTalkTerminatorService.exe.config
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\Assemblies\BizTalkTerminatorService.exe
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\Assemblies\BizTalkTerminatorService.pdb
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.CopyComplete
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.pdb
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorService.exe.config
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorService.exe.manifest
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorService.application
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorService.exe
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorService.pdb
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csprojAssemblyReference.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.BizTalkTerminatorService.resources
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.ProjectInstaller.resources
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.GenerateResource.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.CoreCompileInputs.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe.manifest
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.application
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.csproj.CopyComplete
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.exe
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorService\obj\Debug\BizTalkTerminatorService.pdb

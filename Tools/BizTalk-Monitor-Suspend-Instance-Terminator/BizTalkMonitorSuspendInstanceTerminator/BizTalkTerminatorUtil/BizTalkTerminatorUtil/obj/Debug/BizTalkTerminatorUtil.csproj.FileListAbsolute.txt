@@ -1,0 +1,14 @@
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csproj.CoreCompileInputs.cache
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\Assemblies\BizTalkTerminatorUtil.dll
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\Assemblies\BizTalkTerminatorUtil.pdb
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csproj.CopyComplete
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.dll
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.pdb
+C:\DEV\More Tools\BizTalk Terminator\biztalkterminator-24871\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csprojAssemblyReference.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorUtil.dll
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\Assemblies\BizTalkTerminatorUtil.pdb
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csprojAssemblyReference.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csproj.CoreCompileInputs.cache
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.csproj.CopyComplete
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.dll
+C:\DEV\More Tools\BizTalk Terminator\BizTalk Terminator\BizTalkTerminatorUtil\BizTalkTerminatorUtil\obj\Debug\BizTalkTerminatorUtil.pdb

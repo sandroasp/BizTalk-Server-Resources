@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkTerminatorUtil", "BizTalkTerminatorUtil\BizTalkTerminatorUtil\BizTalkTerminatorUtil.csproj", "{66D323FD-BE02-4F42-BA72-D8F20366C102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalkTerminatorService", "BizTalkTerminatorService\BizTalkTerminatorService.csproj", "{5D195F71-FB9E-4A92-8B32-388062066735}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BizTalkTerminatorServiceSetup", "BizTalkTerminatorServiceSetup\BizTalkTerminatorServiceSetup.vdproj", "{FEEB7662-ADDB-4348-BB92-805030D7C317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|x86.ActiveCfg = Release|Any CPU
+		{66D323FD-BE02-4F42-BA72-D8F20366C102}.Release|x86.Build.0 = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|x86.ActiveCfg = Release|Any CPU
+		{5D195F71-FB9E-4A92-8B32-388062066735}.Release|x86.Build.0 = Release|Any CPU
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Debug|Any CPU.ActiveCfg = Debug
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Debug|x86.ActiveCfg = Debug
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Release|Any CPU.ActiveCfg = Release
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Release|Any CPU.Build.0 = Release
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Release|Mixed Platforms.ActiveCfg = Release
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Release|x86.ActiveCfg = Release
+		{FEEB7662-ADDB-4348-BB92-805030D7C317}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F162197-EA6E-4D1F-B744-3AB730A31727}
+	EndGlobalSection
+EndGlobal

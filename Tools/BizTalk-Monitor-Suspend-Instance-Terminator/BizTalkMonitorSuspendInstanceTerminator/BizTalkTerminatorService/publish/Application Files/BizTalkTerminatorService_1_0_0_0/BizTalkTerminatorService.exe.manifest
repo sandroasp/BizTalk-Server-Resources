@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BizTalkTerminatorService.exe" version="1.0.0.0" publicKeyToken="e5b4174276258fa7" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BizTalkTerminatorService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BizTalkTerminatorService.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BizTalkTerminatorService.exe" size="14336">
+      <assemblyIdentity name="BizTalkTerminatorService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MLl2K10XDtdc8C1fSlxR6BNxsDkhnvcZ1+XqcTI1qu8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BizTalkTerminatorUtil.dll" size="16384">
+      <assemblyIdentity name="BizTalkTerminatorUtil" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y8JC+H1vxsSYDN/6fAXoI2Xu+AY29AwWj8/yHoHw/Jc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.Charsets.dll" size="1758600">
+      <assemblyIdentity name="IKVM.OpenJDK.Charsets" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cb6IdqlZzA6Afy3ATnOLbBJXBBcYqB1j72kXmfYxDDA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.Core.dll" size="6691208">
+      <assemblyIdentity name="IKVM.OpenJDK.Core" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HLd4egWN4SKT41dsS/Z29rdaq6FE11hixZ7H81Dzl08=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.Security.dll" size="2871688">
+      <assemblyIdentity name="IKVM.OpenJDK.Security" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>p5SbUNlHHA+mb4wpGX4v5r0Cb476qvUOAH+xRobIZSk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.Text.dll" size="556936">
+      <assemblyIdentity name="IKVM.OpenJDK.Text" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XcEvx1+Nam2IC5BHl7I2k+dbu1JwpJN2LnfS3xTRmLw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.Util.dll" size="980872">
+      <assemblyIdentity name="IKVM.OpenJDK.Util" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xx9YG3NBvrr9TAuPb3LI+k9u0FZtSrPhhOEhAMmuY4A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.OpenJDK.XML.API.dll" size="221568">
+      <assemblyIdentity name="IKVM.OpenJDK.XML.API" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XrxjXL03tVL2wfSPL+LDfAYqquvQHL84bxgRdFW8p/k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKVM.Runtime.dll" size="910216">
+      <assemblyIdentity name="IKVM.Runtime" version="8.1.5717.0" publicKeyToken="13235D27FCBFFF58" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Y4V31CTyeNhHLjLQPZC8JPJl4lTDiNSq6Zw0BXUKuDc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="saxon9he.dll" size="10046344">
+      <assemblyIdentity name="saxon9he" version="9.9.1.7" publicKeyToken="E1FDD002D5083FE6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GEvOaQ7PtgEYQjxnF/4qDYRcIVU9Y+WluIdL9irvV6g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="saxon9he-api.dll" size="149896">
+      <assemblyIdentity name="saxon9he-api" version="9.9.1.7" publicKeyToken="E1FDD002D5083FE6" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5xkVRP9u6pCnK7vp8gObfXuUZR2WCpG3zcV1+Q4Liu0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BizTalkTerminatorService.exe.config" size="3858">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o1aozKuvrgbC9pjP6ZRmbVCYX2fzT6Z1PnArgSXGJKE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BTS2020LABAVMRG\saspereira" issuerKeyHash="69241f16148a1dc5c2ec3017bf9b59aab924d0a1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Fqh76kgjJRzx1Vsj5vp+VT0rlZbjdI59CYNt+yNKsoQ=</DigestValue></Reference></SignedInfo><SignatureValue>XW2q1w+Fod9lFGrP9oNH8lCNKRR8R3jLd9fk5UKQV6wSufC5SiDIn7hlJKzv0JqZ2s51GuA8Y+dUS9Oec+/x/CJQv41ebDiFWnO2VZmAyTPe77La3vN5mbggfKSu0khNdhi78F9Fv8S2shwzPFhGcva0BRd3ZeUmsliWbv4oLo4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zCNFAp9BEKfqQnIuoV4K1oqdxaUbXZJk+1t7srKLl0UzEsBwBA1pQbFk4bteQZc1wjsimr6KOgZJxFJxceN1WZyJJcokROjd7bqsTxqgSkEW3T3p8BoyovBS7J7YWXKjm7/yQn1j64SuUK7XDj2kAkXAmTqObvs6ecLUAm5szak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="84b24a23fb6d83097d8e74e396952b3d557efae6235bd5f11c252348ea7ba816" Description="" Url=""><as:assemblyIdentity name="BizTalkTerminatorService.exe" version="1.0.0.0" publicKeyToken="e5b4174276258fa7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BTS2020LABAVMRG\saspereira</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kn2Q946+ocBOi9w9yg8OfWKborSdmIcs+V0PMhNNXfc=</DigestValue></Reference></SignedInfo><SignatureValue>tCShmR8d488Dp+EutWKD5swVXwFPj6/LcknvbEqXC0IFwBfoAUucSQfw1kXYVQE4bP4BQPLN4fmVx18LIgjXEjwiG7agjXoNa9ON0e9y5kkTAPVYv3eZc0KZHrOtw5QeL3QK/xiXhAjuUGMNDwLn0DTcsYZOh4Av1y+LCCFBEUM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zCNFAp9BEKfqQnIuoV4K1oqdxaUbXZJk+1t7srKLl0UzEsBwBA1pQbFk4bteQZc1wjsimr6KOgZJxFJxceN1WZyJJcokROjd7bqsTxqgSkEW3T3p8BoyovBS7J7YWXKjm7/yQn1j64SuUK7XDj2kAkXAmTqObvs6ecLUAm5szak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQbW6e4wEQcqZAOmzaLepwOTANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQAQgBUAFMAMgAwADIAMABMAEEAQgBBAFYATQBSAEcAXABzAGEAcwBwAGUAcgBlAGkAcgBhMB4XDTIyMDEwNTExMjkzNFoXDTIzMDEwNTE3MjkzNFowPzE9MDsGA1UEAx40AEIAVABTADIAMAAyADAATABBAEIAQQBWAE0AUgBHAFwAcwBhAHMAcABlAHIAZQBpAHIAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzCNFAp9BEKfqQnIuoV4K1oqdxaUbXZJk+1t7srKLl0UzEsBwBA1pQbFk4bteQZc1wjsimr6KOgZJxFJxceN1WZyJJcokROjd7bqsTxqgSkEW3T3p8BoyovBS7J7YWXKjm7/yQn1j64SuUK7XDj2kAkXAmTqObvs6ecLUAm5szakCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBB8gW+lPSFsKNodk4rAE9BSvf40PBqhkfw1gtQDHdVeB3u0mFr4D1iinV4RZTkYr1+SOtwJgWGRDoj/fXNTZGaI1jEGQ6p6IRvC8bCH4U3fgcQ9EoJ9kCvbfgXOELiD2AJE9qCTf1aNAKQNaBryRJnS1XJOxL/xMiTkKvLhmF2lw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
