@@ -35,6 +35,7 @@ Unfortunately this tool will, or may, not work properly in BizTalk Server 2013 R
 To fix this issue I recompile the SSOMMCSnapIn.dll using the latest version of “Microsoft.EnterpriseSingleSignOn.Interop.dll”. You just need to overlap the existing file, normally prsent in "C:\Program Files (x86)\Microsoft Services\SSO Application Configuration\" folder with this version.
 
 ## BizTalk Monitor Suspend Instance Terminator Service
+Windows Service that is continually monitoring BizTalk Server for specific suspended messages and termites them automatically.
 
 
 THESE TOOLS/RESOURCES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
