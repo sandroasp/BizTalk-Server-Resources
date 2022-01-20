@@ -1,7 +1,6 @@
-# Save/archive all BizTalk Server suspended messages with PowerShell
+# How to Restart BizTalk Server services with PowerShell
 
-This script that will retrieve the body/payload of all suspended BizTalk Server messages and save it to a specific folder.
-No filters required.
+This script will restart all BizTalk Server services installed on the machine.
 
 THIS POWERSHELL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
