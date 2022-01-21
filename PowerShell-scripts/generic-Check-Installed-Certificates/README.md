@@ -1,6 +1,6 @@
 # Check where a specific certificated is installed with PowerShell
 
-These PowerShell scripts will allow you to get information were a specific certificated is installed on the machine by search by it's thumbprint.
+These PowerShell scripts will allow you to get information where a specific certificated is installed on the machine by search by it's thumbprint.
  
 THESE POWERSHELL SCRIPTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
