@@ -1,4 +1,4 @@
-# Check were a specific certificated is installed with PowerShell
+# Check where a specific certificated is installed with PowerShell
 
 These PowerShell scripts will allow you to get information were a specific certificated is installed on the machine by search by it's thumbprint.
  
