@@ -1,0 +1,36 @@
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\obj\Debug\VoidAdapter.csprojAssemblyReference.cache
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\obj\Debug\VoidAdapter.csproj.CoreCompileInputs.cache
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.pdb
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\EnvDTE.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\stdole.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\saxon9he-api.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\saxon9he.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.Runtime.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\obj\Debug\VoidAdapter.csproj.CopyComplete
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\obj\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.dll
+C:\DEV\POC\BizTalk 2004 Null Send Adapter\NullAdapterSol\VoidAdapter\obj\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.pdb
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.pdb
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\EnvDTE.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\stdole.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\saxon9he-api.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\saxon9he.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.Runtime.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\obj\Debug\VoidAdapter.csprojAssemblyReference.cache
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\obj\Debug\VoidAdapter.csproj.CoreCompileInputs.cache
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\obj\Debug\VoidAdapter.csproj.CopyComplete
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\obj\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.dll
+C:\DEV\Pet Projects\Microsoft.BizTalk.Void.Adapter\VoidAdapter\obj\Debug\Microsoft.BizTalk.Void.Adapter.Runtime.pdb

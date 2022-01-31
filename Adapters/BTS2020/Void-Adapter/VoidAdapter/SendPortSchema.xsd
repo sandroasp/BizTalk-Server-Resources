@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:baf="BiztalkAdapterFramework.xsd" 
+xmlns:b="http://schemas.microsoft.com/BizTalk/2003"
+   elementFormDefault="unqualified"
+   id="TransmitHandler" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="CustomProps">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="name" type="xs:string">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <baf:designer>
+                        <baf:category>Endpoint Configuration</baf:category>
+                        <baf:displayname>Name</baf:displayname>
+                        <baf:description>Name that uniquely identifies this send port.</baf:description>
+                     </baf:designer>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:element>
+            <xs:element default="false" name="logMessages" type="xs:boolean">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <baf:designer>
+                        <baf:category>Endpoint Configuration</baf:category>
+                        <baf:displayname>Log to Event Viewer</baf:displayname>
+                        <baf:description>Indicates whether to log an entry on the Event Viewer for each message transmitted</baf:description>
+                     </baf:designer>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="uri" type="xs:string">
+               <xs:annotation>
+                  <xs:appinfo>
+                     <baf:designer>
+                        <baf:browsable show="false" />
+                     </baf:designer>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>
