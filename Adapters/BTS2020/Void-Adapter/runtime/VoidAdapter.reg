@@ -14,10 +14,10 @@ Windows Registry Editor Version 5.00
 
 "OutboundEngineCLSID"="{9A5DDDDA-E443-4239-A6AF-CDE159D5FA56}"
 "OutboundTypeName"="Microsoft.BizTalk.Void.Adapter.VoidTransmitter"
-"OutboundAssemblyPath"="C:\\DEV\\Pet Projects\\Microsoft.BizTalk.Void.Adapter\\VoidAdapter\\bin\\Debug\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
+"OutboundAssemblyPath"="C:\\Program Files (x86)\\BizTalkVoidAdapter\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
 
 "AdapterMgmtTypeName"="Microsoft.BizTalk.Void.Adapter.VoidAdapterManagement"
-"AdapterMgmtAssemblyPath"="C:\\DEV\\Pet Projects\\Microsoft.BizTalk.Void.Adapter\\VoidAdapter\\bin\\Debug\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
+"AdapterMgmtAssemblyPath"="C:\\Program Files (x86)\\BizTalkVoidAdapter\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
 
 "PropertyNameSpace"="urn:schemas-intothevoid-com:voidadapter"
 "AliasesXML"="<AdapterAliasList><AdapterAlias>void://</AdapterAlias></AdapterAliasList>"
