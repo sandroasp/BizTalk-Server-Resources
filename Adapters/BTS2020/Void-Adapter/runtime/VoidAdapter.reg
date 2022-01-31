@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{952D2DC7-0B3F-4C3B-8AF0-9FD9199D1432}]
+@="Void Adapter"
+"AppID"="{12A6EBAA-CF68-4B58-B36E-A5A19B22C04E}"
+
+[HKEY_CLASSES_ROOT\CLSID\{952D2DC7-0B3F-4C3B-8AF0-9FD9199D1432}\BizTalk]
+@="BizTalk"
+"TransportType"="Void"
+"Constraints"=dword:2012
+
+"OutboundProtocol_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A283}"
+"TransmitLocation_PageProv"="{2DE93EE6-CB01-4007-93E9-C3D71689A282}"
+
+"OutboundEngineCLSID"="{9A5DDDDA-E443-4239-A6AF-CDE159D5FA56}"
+"OutboundTypeName"="Microsoft.BizTalk.Void.Adapter.VoidTransmitter"
+"OutboundAssemblyPath"="C:\\DEV\\Pet Projects\\Microsoft.BizTalk.Void.Adapter\\VoidAdapter\\bin\\Debug\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
+
+"AdapterMgmtTypeName"="Microsoft.BizTalk.Void.Adapter.VoidAdapterManagement"
+"AdapterMgmtAssemblyPath"="C:\\DEV\\Pet Projects\\Microsoft.BizTalk.Void.Adapter\\VoidAdapter\\bin\\Debug\\Microsoft.BizTalk.Void.Adapter.Runtime.dll"
+
+"PropertyNameSpace"="urn:schemas-intothevoid-com:voidadapter"
+"AliasesXML"="<AdapterAliasList><AdapterAlias>void://</AdapterAlias></AdapterAliasList>"
+"SendHandlerPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+"SendLocationPropertiesXML"="<CustomProps><AdapterConfig vt=\"8\"/></CustomProps>"
+
+[HKEY_CLASSES_ROOT\CLSID\{952D2DC7-0B3F-4C3B-8AF0-9FD9199D1432}\Implemented Categories]
+
+[HKEY_CLASSES_ROOT\CLSID\{952D2DC7-0B3F-4C3B-8AF0-9FD9199D1432}\Implemented Categories\{7F46FC3E-3C2C-405B-A47F-8D17942BA8F9}]
