@@ -1,6 +1,6 @@
 using System.Management;  
   
-//Sample to show how to save a tracked message out to a file folder using MSBTS_TrackedMessageInstance class  
+//Sample to show how to save a tracked message out to a file folder using MSBTS_TrackedMessageInstance2 class  
 public void SaveTrackedMessageInstanceToFolder(Guid MessageInstanceId, string strOutputFolder)  
 {  
     try  
