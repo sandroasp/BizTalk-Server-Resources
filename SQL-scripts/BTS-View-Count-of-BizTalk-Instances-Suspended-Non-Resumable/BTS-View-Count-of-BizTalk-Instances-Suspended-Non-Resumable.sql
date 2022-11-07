@@ -16,5 +16,5 @@
 USE BizTalkMsgBoxDb;
 SELECT COUNT(nstate) SuspendedNonResumable  
 FROM Instances WITH (NOLOCK)
-WHERE nstate = 32
+WHERE nstate = 3
 
