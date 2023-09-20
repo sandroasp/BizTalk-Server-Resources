@@ -1,6 +1,5 @@
-# BizTalk Server: SQL Query to View Count of Active (running) BizTalk Instances
-View Count of Active (running) BizTalk Instances
-RUN AGAINST THIS DB: BizTalkMsgBoxDB                                                                                       
+# BizTalk Server: SQL Query to Check BizTalk Server SQL Jobs with failure
+This SQL script will cjeck if                                                                                   
 
 THIS SQL SCRIPT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
