@@ -1,13 +1,13 @@
-﻿# Set Path of BizTalk Server Solution
-cd 'C:\DEV\mediation-biztalk\Sources\Loyalty'
+﻿#Set Path of BizTalk Server Solution
+cd 'C:\<BizTalk Solution Path'
 
-# Set BizTalk Project Deployment Properties
-$ServerName = "BTS2020LAB02"
-$DatabaseName = "BizTalkMgmtDb"
-$ApplicationName = "Loyalty"
-$RedeployFlag = "True"
-$RegisterFlag = "True"
-$RestartHostInstancesFlag = "False"
+#Set BizTalk Project Deployment Properties
+$ServerName= "<BizTalkServer>";
+$DatabaseName= "BizTalkMgmtDb";
+$ApplicationName= "<BTSApplicationName>";
+$RedeployFlag= "True";
+$RegisterFlag= "True";
+$RestartHostInstancesFlag= "False";
 
 # Iterate all *.btproj.user files
 Get-ChildItem -Recurse -Filter *btproj.user | ForEach-Object { 
