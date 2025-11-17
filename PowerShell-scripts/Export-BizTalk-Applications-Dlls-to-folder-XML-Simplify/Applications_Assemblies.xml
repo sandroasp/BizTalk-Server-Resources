@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Applications>
+  <Application name="App1">
+    <Assembly>Common.Messaging</Assembly>
+    <Assembly>Common.Processing</Assembly>
+  </Application>
+  <Application name="App2">
+    <Assembly>assembly1</Assembly>
+  </Application>
+</Applications>
