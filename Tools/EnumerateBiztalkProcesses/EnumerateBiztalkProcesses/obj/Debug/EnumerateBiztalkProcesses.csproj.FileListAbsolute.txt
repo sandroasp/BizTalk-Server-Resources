@@ -1,0 +1,7 @@
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\bin\Debug\EnumerateBiztalkProcesses.exe.config
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\bin\Debug\EnumerateBiztalkProcesses.exe
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\bin\Debug\EnumerateBiztalkProcesses.pdb
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\obj\Debug\EnumerateBiztalkProcesses.csproj.AssemblyReference.cache
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\obj\Debug\EnumerateBiztalkProcesses.csproj.CoreCompileInputs.cache
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\obj\Debug\EnumerateBiztalkProcesses.exe
+D:\REPOS\DEVSCOPE\EnumerateBiztalkProcesses\EnumerateBiztalkProcesses\obj\Debug\EnumerateBiztalkProcesses.pdb

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\REPOS\\DEVSCOPE\\EnumerateBiztalkProcesses\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1B6F34-695C-42CB-94E2-1F91B5136F25}|EnumerateBiztalkProcesses\\EnumerateBiztalkProcesses.csproj|d:\\repos\\devscope\\enumeratebiztalkprocesses\\enumeratebiztalkprocesses\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1B6F34-695C-42CB-94E2-1F91B5136F25}|EnumerateBiztalkProcesses\\EnumerateBiztalkProcesses.csproj|solutionrelative:enumeratebiztalkprocesses\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{55f480fa-fbef-4386-8c1c-ea8d10c9f542}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\REPOS\\DEVSCOPE\\EnumerateBiztalkProcesses\\EnumerateBiztalkProcesses\\Program.cs",
+              "RelativeDocumentMoniker": "EnumerateBiztalkProcesses\\Program.cs",
+              "ToolTip": "D:\\REPOS\\DEVSCOPE\\EnumerateBiztalkProcesses\\EnumerateBiztalkProcesses\\Program.cs*",
+              "RelativeToolTip": "EnumerateBiztalkProcesses\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T09:12:41.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
