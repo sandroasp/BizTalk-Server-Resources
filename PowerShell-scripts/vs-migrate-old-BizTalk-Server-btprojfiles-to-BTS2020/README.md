@@ -1,4 +1,4 @@
-# Visual Studio: Migarte old BizTalk Server btproj files to BizTalk 2020 with PowerShell
+# Visual Studio: Migrate old BizTalk Server btproj files to BizTalk 2020 with PowerShell
 
 ## Introduction
 The script translate the relevant information from the old project model into its MSBuild equivalent. That typically includes:
